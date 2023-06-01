@@ -210,8 +210,8 @@
 		var opts = $.data($(this).get(0), 'opts');
 		var pos = marker.getPosition();;
 
-		$( opts.lat ).val( pos.lat() );
-		$( opts.lng ).val( pos.lng() );
+		$( opts.lat ).val( pos.lat() ).trigger('change');
+		$( opts.lng ).val( pos.lng() ).trigger('change');
 	};
 
 
